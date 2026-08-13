@@ -1,28 +1,28 @@
 class Superset < Formula
   desc "CLI and host-service for Superset"
   homepage "https://superset.sh"
-  version "1.20.2"
+  version "1.21.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/superset-sh/superset/releases/download/cli-v#{version}/superset-darwin-arm64.tar.gz"
-      sha256 "4c73ff800f0240422f6be7b4252b63850fd8d4a91b046c56f08338a5965aa831"
+      sha256 "a39fefa44b85457e89d82eac826527d4cbfc2d26f2bd0bf69d3f578a3f87a8ee"
     end
     on_intel do
       url "https://github.com/superset-sh/superset/releases/download/cli-v#{version}/superset-darwin-x64.tar.gz"
-      sha256 "871a4a9baaac3d799ccafadd98e2e9746cf0b70cd175b08cb3bb083c4cf714a5"
+      sha256 "c4c7f0df1cc311b6041782031b572c8c7774480abf36514db5af8322b997b6be"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/superset-sh/superset/releases/download/cli-v#{version}/superset-linux-x64.tar.gz"
-      sha256 "ddbb31f790ac7cc0ce4dbefd14fdb86faead47bd4f4a339146e59fd3ce93b07d"
+      sha256 "209c7e191461e5a1f00e53d05695731457eeeaf95e05da11dad02fb86707ff5f"
     end
     on_arm do
       url "https://github.com/superset-sh/superset/releases/download/cli-v#{version}/superset-linux-arm64.tar.gz"
-      sha256 "508fae3aab59f02ac2aa3f9961db271825c6d5866ef9fa7a3d0b9c3d1ca65381"
+      sha256 "c7de3626c2a10648c0a5337a6047074018183b50bfc3c804cfa1a3ebd3dc0c2f"
     end
   end
 
